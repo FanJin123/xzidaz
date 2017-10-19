@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<input type="text" name="" value="输入60个字" id="inpt">
+<button id="btn">按钮</button>
+	<script>
+	var iPt=document.getElementById('inpt')
+	var bTn=document.getElementById('btn')
+	iPt.oninput=function(){
+		if(iPt.value.length>60){
+			bTn.setAttribute("disabled","true")
+		}else{
+			bTn.removeAttribute("disabled")
+		}
+	}
+	</script>
+</body>
+</html>
